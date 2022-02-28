@@ -20,6 +20,15 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: 8080
+        env:
+          -name: DbServer
+          value: jdbc:sqlserver://db-mssql
+          -name: DbUser
+          value: guest
+          -name: Password
+          value: guest
+          -name: Database
+          value: OrdersDb
      
 ---
 apiVersion: v1
