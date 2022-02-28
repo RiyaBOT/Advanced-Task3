@@ -30,14 +30,14 @@ spec:
             name: product
             port:
               number: 80
-      - path: /CartApi
+      - path: /cart
         pathType: Prefix
         backend:
           service:
             name: cartapi
             port:
               number: 80
-      - path: /OrderService
+      - path: /order
         pathType: Prefix
         backend:
           service:
